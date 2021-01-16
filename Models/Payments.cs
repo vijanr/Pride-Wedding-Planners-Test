@@ -8,9 +8,9 @@ namespace PrideWeddingPlanners.Models
     public class Payments
     {
         public int ID { get; set; }
-        public int card_no { get; set; }
+        public string card_no { get; set; }
         public string cardholder_name { get; set; }
-        public int exp_date { get; set; }
-        public int cvc { get; set; }
+        public string exp_date { get; set; }
+        public string cvc { get; set; }
     }
 }
