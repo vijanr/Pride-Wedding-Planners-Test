@@ -12,7 +12,7 @@ namespace PrideWeddingPlanners.Models
 		public int ID { get; set; }
 		public string price { get; set; }
 		public string detail { get; set; }
-		public int start_date { get; set; }
+		public string start_date { get; set; }
 		public string image { get; set; }
 		public string email { get; set; }
 		public string end_date { get; set; }
