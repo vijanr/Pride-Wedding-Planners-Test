@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrideWeddingPlanners.Models;
 
 namespace PrideWeddingPlanners.Migrations
 {
     [DbContext(typeof(WeddingDBContext))]
-    partial class WeddingDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210117012235_17.01221")]
+    partial class _1701221
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,8 +27,8 @@ namespace PrideWeddingPlanners.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("customer_no")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("customer_no")
+                        .HasColumnType("int");
 
                     b.Property<string>("vendor_no")
                         .HasColumnType("nvarchar(max)");
@@ -58,8 +60,8 @@ namespace PrideWeddingPlanners.Migrations
                     b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("tele_no")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("tele_no")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
@@ -106,11 +108,11 @@ namespace PrideWeddingPlanners.Migrations
                     b.Property<int>("package_no")
                         .HasColumnType("int");
 
-                    b.Property<string>("price")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("price")
+                        .HasColumnType("int");
 
-                    b.Property<string>("start_date")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("start_date")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
@@ -157,8 +159,8 @@ namespace PrideWeddingPlanners.Migrations
                     b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("tele_no")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("tele_no")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
@@ -172,8 +174,8 @@ namespace PrideWeddingPlanners.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("password")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("password")
+                        .HasColumnType("int");
 
                     b.Property<string>("username")
                         .HasColumnType("nvarchar(max)");

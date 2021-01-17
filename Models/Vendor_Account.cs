@@ -13,6 +13,6 @@ namespace PrideWeddingPlanners.Models
         public string username { get; set; }
         
         [DataType(DataType.Password)]
-        public int password { get; set; }
+        public string password { get; set; }
     }
 }
